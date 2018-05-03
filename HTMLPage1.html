@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Theo</title>
+    <link rel="shortcut icon" href="calculate.ico">
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+            background-color: #F0F0F0;
+        }
+
+        #root {
+            margin: 0px 15vw;
+        }
+
+        #pro_icn_img {
+            background-image: url("https://processing.org/img/processing-web.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+
+        #p_contend {
+            margin: 0px;
+            padding: 0px;
+            width: 70vw;
+        }
+
+        #img_window {
+            grid-column: 2;
+            grid-row: 1;
+            margin: 10px;
+            min-height: 400px;
+            min-width: 400px;
+            background-image: url("window.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .what_is {
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 70% 30%;
+        }
+
+        .processing {
+            grid-column: 2;
+            grid-row: 2;
+            min-width: 20vw;
+            background-color: #111;
+            color: #DDD;
+            font-family: sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid #222;
+            border-radius: 3px;
+        }
+
+            .processing function {
+                display: inline;
+                color: #FF2348;
+            }
+
+            .processing functiondec {
+                display: inline;
+                color: #DA1293;
+            }
+
+            .processing num {
+                display: inline;
+                color: #46EA67;
+            }
+
+            .processing type {
+                display: inline;
+                color: #00a5d1;
+            }
+
+        .header {
+            grid-column: 1;
+            grid-row: 1 / 2;
+            margin: 0px;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .processing ::selection {
+            color: Window
+        }
+    </style>
+    <script>
+        var toggleprocessing = false;
+        var togglejs = false;
+        function processing() {
+            if (!toggleprocessing) {
+                document.getElementById("p_contend").style = "display: block";
+                toggleprocessing = true;
+                togglejs = true;
+                js();
+            } else {
+                document.getElementById("p_contend").style = "display: none";
+                toggleprocessing = false;
+            }
+
+        }
+        function js() {
+            if (!togglejs) {
+                document.getElementById("j_contend").style = "display: block";
+                togglejs = true;
+                toggleprocessing = true;
+                processing();
+            } else {
+                document.getElementById("j_contend").style = "display: none";
+                togglejs = false;
+            }
+
+        }
+        function search(x) {
+            if (true) {
+
+            }
+        }
+        function download() {
+            window.open("http://download.processing.org/processing-3.3.7-windows64.zip");
+        }
+    </script>
+</head>
+<body>
+    <div id="root">
+        <div id="processing">
+            <img src="https://processing.org/img/processing-logo.svg" id="pro_icn_img" onclick="processing()" />
+            <div id="p_contend" style="display:none;">
+                <div class="what_is">
+                    <div class="header"><p>Was ist Processing?</p><p>Processing ist ein Open-Source Projekt vond der Processing Foundation, zum lernen von Programmieren. Es ist eine auf Java basierende Programmiersprache – die Syntax sollte also nicht ein problem darstellen – inklusive IDE(nich greade die schönste). Processing besitzt eine vereinfachte Syntax, z.B. Klassen, und eine eigende 2D GUI Bibliothek, sowie ein par andere. Der Vorteil man beginnt sofort mit dem Fenster und der Graphik.</p></div>
+                    <div id="img_window"></div>
+                    <div class="processing">
+                        <p style="display:inline;">
+                            <type>void</type> <functiondec>setup()</functiondec>{<br />&emsp;&emsp;<function>size(</function><num>400</num>,<num>400</num><function>)</function>;<br />}<br /><type>void</type> <functiondec>draw()</functiondec>{<br />}<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="get_p">
+                    <div class="header"><p>Wie bekomme ich es?</p><p onclick="download()">hier</p><p>Ist es kostenlos?<br />Ja, wie im ersten Satz erwähnt<br />Ist es illigal?<br />Nein, waum sollte dieser Download illigal sein<br />Ist es gefährlich?<br />Nein, warum könnte es gefährlich sein</p></div>
+                </div>
+                <div class="motivation_p">
+                    <div class="header"><p>Motvation<ul><li>Einfach ein bisschen Zeit investieren wird kein Problem sein</li><li>50€ sind grund genug</li></ul></p></div>
+                </div>
+            </div>
+        </div>
+        <div id="js">
+            <img src="https://p5js.org/assets/img/p5js.svg" id="js_icn_img" onclick="js()" />
+            <div id="j_contend" style="display:none;">
+                ja
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
