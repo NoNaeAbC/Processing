@@ -6,7 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1DD885D8-2304-4994-B2C8-0D56DC98CD06}"
 	ProjectSection(SolutionItems) = preProject
 		calculate.ico = calculate.ico
-		HTMLPage1.html = HTMLPage1.html
+		index.html = index.html
 		window.png = window.png
 	EndProjectSection
 EndProject
