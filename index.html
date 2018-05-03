@@ -92,6 +92,13 @@
         .processing ::selection {
             color: Window
         }
+        #first{
+            background-image: url("first.png");
+        }
+        .price {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
     </style>
     <script>
         var toggleprocessing = false;
@@ -128,6 +135,9 @@
         function download() {
             window.open("http://download.processing.org/processing-3.3.7-windows64.zip");
         }
+        function first() {
+
+        }
     </script>
 </head>
 <body>
@@ -144,11 +154,30 @@
                         </p>
                     </div>
                 </div>
-                <div class="get_p">
+                <div class="get">
                     <div class="header"><p>Wie bekomme ich es?</p><p onclick="download()">hier</p><p>Ist es kostenlos?<br />Ja, wie im ersten Satz erwähnt<br />Ist es illigal?<br />Nein, waum sollte dieser Download illigal sein<br />Ist es gefährlich?<br />Nein, warum könnte es gefährlich sein</p></div>
                 </div>
-                <div class="motivation_p">
-                    <div class="header"><p>Motvation<ul><li>Einfach ein bisschen Zeit investieren wird kein Problem sein</li><li>50€ sind grund genug</li></ul></p></div>
+                <div class="knowlege">
+
+                </div>
+                <div class="learn">
+                    
+                </div>
+                <div class="lookup">
+
+                </div>
+                <div class="help">
+
+                </div>
+                <div class="price">
+                    <ul class="price">
+                        <li id="first" onmousemove="first()">
+                            1€: Kreis in einem Rechteck zeichnen
+                        </li>
+                        <li id="first" onmousemove="first()">
+                            1€: Kreis in einem Rechteck zeichnen
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
