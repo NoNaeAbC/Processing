@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
+<!DOCTYPE html>
+<!-- saved from url=(0036)file:///C:/xampp71/htdocs/index.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>Theo</title>
-    <link rel="shortcut icon" href="calculate.ico">
+    <link rel="shortcut icon" href="file:///C:/xampp71/htdocs/calculate.ico">
+    
     <style>
         body {
             margin: 0px;
@@ -191,7 +192,7 @@
             document.getElementById("first").innerHTML = "1€: Kreis in einem Rechteck zeichnen";
             document.getElementById("first").style = 'background-image: none;';
         }
-        function second() {
+        function second_() {
             document.getElementById("second").innerHTML = "";
             document.getElementById("second").style = 'background-image: url("second.png");';
 
@@ -212,7 +213,7 @@
         function secondm() {
             if (!sc) {
                 sc = true;
-                second();
+                second_();
             } else {
                 sc = false;
                 secondo();
@@ -224,37 +225,37 @@
 <body>
     <div id="root">
         <div id="processing">
-            <img src="https://processing.org/img/processing-logo.svg" id="pro_icn_img" onclick="processing()" />
-            <div id="p_contend" style="display:none;">
+            <img src="./index_files/processing-logo.svg" id="pro_icn_img" onclick="processing()">
+            <div id="p_contend" style="display: block;">
                 <div class="what_is">
                     <div class="header"><p>Was ist Processing?</p><p>Processing ist ein Open-Source Projekt von der Processing Foundation, zum Programmierenlernen. Es ist eine auf Java basierende Programmiersprache – die Syntax sollte also nicht ein Problem darstellen – inklusive IDE(nich greade die schönste). Processing besitzt eine vereinfachte Syntax, z.B. im Bereich der Klassen, und eine eigende 2D GUI Bibliothek, sowie ein par andere. Der Vorteil man beginnt sofort mit dem Fenster und den Grafiken.</p></div>
                     <div id="img_window"></div>
                     <div class="processing">
                         <p style="display:inline;">
-                            <type>void</type> <functiondec>setup()</functiondec>{<br />&emsp;&emsp;<function>size(</function><num>400</num>,<num>400</num><function>)</function>;<br />}<br /><type>void</type> <functiondec>draw()</functiondec>{<br />}<br />
+                            <type>void</type> <functiondec>setup()</functiondec>{<br>  <function>size(</function><num>400</num>,<num>400</num><function>)</function>;<br>}<br><type>void</type> <functiondec>draw()</functiondec>{<br>}<br>
                         </p>
                     </div>
                 </div>
                 <div class="get">
-                    <div class="header"><p>Wie bekomme ich es?</p><p onclick="download()">clicke hier, wenn auf Windows</p><p>Ist es kostenlos?<br />Ja, wie im ersten Satz erwähnt<br />Ist es illigal?<br />Nein, waum sollte dieser Download illigal sein<br />Ist es gefährlich?<br />Nein, warum könnte es gefährlich sein</p></div>
+                    <div class="header"><p>Wie bekomme ich es?</p><p onclick="download()">clicke hier, wenn auf Windows</p><p>Ist es kostenlos?<br>Ja, wie im ersten Satz erwähnt<br>Ist es illigal?<br>Nein, waum sollte dieser Download illigal sein<br>Ist es gefährlich?<br>Nein, warum könnte es gefährlich sein</p></div>
                 </div>
                 <div class="knowlege">
                     <p>Brauche ich Java?</p>
                     <p>- es wäre hilfreich(die bacics wie if, while, funktionen und Typen)</p>
                     <p>- du lernst es dabei</p>
                     <p>- glaubst du es gibt ein Problem, weil du Java nicht kannst sprech uns an, DENKE ABER VERSTEHEN SOLLTEST DU ALLES AUCH WENN DU DAS GESCHRIEBENDE NOCH NICHT KENNST</p>
-                    <p>- Es gibt 2 Richtungen in die man weiter gehen könnte: JavaScript (p5.js lib), <em>welches mit Java NICHTS zu tun hat</em><br />| Java - dies soll also auch eine Vorbereitung für Java sein <em>KEINE ANWENDUNG VON JAVA</em></p>
+                    <p>- Es gibt 2 Richtungen in die man weiter gehen könnte: JavaScript (p5.js lib), <em>welches mit Java NICHTS zu tun hat</em><br>| Java - dies soll also auch eine Vorbereitung für Java sein <em>KEINE ANWENDUNG VON JAVA</em></p>
                     <p>Achtung es kann Mathematisch werden(nicht wegen Programmieren, sondern Processing), sollte aber leicht und anschaulich sein - Processing kann nämlich schön zur Veranschaulichung Mathematischer Probleme dienen</p>
                 </div>
                 <div class="learn">
                     <p>
-                        Wo soll ich anfangen zu lernen?<br />
-                        Folge folgende Anleitung einfach<br /> 
+                        Wo soll ich anfangen zu lernen?<br>
+                        Folge folgende Anleitung einfach<br> 
                     </p>
                     <div class="learn">
                         <p>
                             Ich würde zum beginn folgendes Playlist Videos 1-23 anschauen. Sie ist auf Deutsch und beginnt von anfang an. Ich hoffe, dass die ersten Videos nicht zu sehr verwirren. Es werden mehrere Spiele programmiert, auch wenn du nicht in die Richtung Game Developpment interessiert bist, ist diese Playlist toll, da bei der Spieleprogrammierung viele bereiche z.B. Input(Maus, Tastertur) odet Grafiken behandelt. Wenn das interessant für dich ist sprich mich an für Spieleprogrammierung mit Java.
-                            <a href="https://www.youtube.com/watch?v=i2pp2dCuJns&list=PLHlPTbN2USompedWjDKesFwg31mmmIoeP">Hier geht es zu den Videos</a>
+                            <a href="https://www.youtube.com/watch?v=i2pp2dCuJns&amp;list=PLHlPTbN2USompedWjDKesFwg31mmmIoeP">Hier geht es zu den Videos</a>
                         </p>
                     </div>
                     <div class="learn">
@@ -265,13 +266,13 @@
                     </div>
                     <div class="learn">
                         <p>
-                            Unter |Datei -> Beispiele...| findest du Beispiele bei denen du einzelnde Zahlen ändern kannst und sehen wie sich das Ergebnis verändert und den Code verstehen. Bedenke, dass einige Beispiele sehr schwer am sind und nicht nach Schwierigkeit geoordnet sind - überspringe sie.
+                            Unter |Datei -&gt; Beispiele...| findest du Beispiele bei denen du einzelnde Zahlen ändern kannst und sehen wie sich das Ergebnis verändert und den Code verstehen. Bedenke, dass einige Beispiele sehr schwer am sind und nicht nach Schwierigkeit geoordnet sind - überspringe sie.
                             ENGLISCH
                         </p>
                     </div>
                     <div class="learn">
                         <p>
-                            Zum Schluss solltest du dir folgende Playlist angucken: <a href="https://www.youtube.com/watch?v=17WoOqgXsRM&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH">Coding Challenges</a> sie ist zwar lang aber nicht schwer zu verstehen. Viele Videos sind in Java Script du musst sie nich gucken, können aber interessant sein.
+                            Zum Schluss solltest du dir folgende Playlist angucken: <a href="https://www.youtube.com/watch?v=17WoOqgXsRM&amp;list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH">Coding Challenges</a> sie ist zwar lang aber nicht schwer zu verstehen. Viele Videos sind in Java Script du musst sie nich gucken, können aber interessant sein.
                         </p>
                     </div>
                 </div>
@@ -280,33 +281,41 @@
                 </div>
                 <div class="help">
                     <p>
-                        Du brauchst hilfe mit deinem Projekt/Ausprobieren<br />Es gibt 2 Möglichkeiten<br />
+                        Du brauchst hilfe mit deinem Projekt/Ausprobieren<br>Es gibt 2 Möglichkeiten<br>
                         4,462 Antworten auf Fragen gibt es auf <a href="https://stackoverflow.com/questions/tagged/processing">Stackoverflow</a> und es werden täglich um ~2 mehr.
-                        Sicherlich ist da auch eine deiner Fragen - einfach bei Google deine frage stellen und du wirst zur Antwort geleited.<br />
+                        Sicherlich ist da auch eine deiner Fragen - einfach bei Google deine frage stellen und du wirst zur Antwort geleited.<br>
                         Du kannst aber auch immer uns deine Frage stellen, undzwar <em>JEDE FRAGE!</em>. Wir(ich) helfe(n) gerne.
                     </p>
                 </div>
                 <div class="price">
-                    <p>Challenges(es sollte das selbe Ergebnis wie auf dem Bildern erzeugt werden)</p>
+                    <p>3 Challenges(es sollte das selbe Ergebnis wie auf dem Bildern erzeugt werden). Es werden weitere hinzukommem, auch welche für viel geld<br>
+			Wir hoffen, das es dich freut
+		    </p>
                     <p></p>
                         <ul class="price">
-                            <li id="first" onmousedown="firstm()" onmouseover="first()" onmouseout="firsto()">
-                                1€: Kreis in einem Rechteck zeichnen
-                            </li>
-                            <li id="second" onmousedown="secondm()" onmouseout="secondo()" onmouseover="second()">
+                            <li id="first" onmousedown="firstm()" onmouseover="first()" onmouseout="firsto()" style="background-image: none;">1€: Kreis in einem Rechteck zeichnen</li>
+                            <li id="second" onmousedown="secondm()" onmouseout="secondo()" onmouseover="second_()">
                                 5€: Uhr(Funktionstüchtig mit <function>sin()</function> und <function>cos()</function>)
-</li>
+                            </li>
+                            <li>
+                                    <iframe src="/3rd.html" width="390px" height="400px"></iframe>
+                            </li>
+                            <li>
+                                <p>
+                                    17€ für diese sinus artige Welle(Du bennötigst eine Maus und eine Taste egal welche)Es muss nicht identisch sein, aber ich sage wenn sie geschafft ist
+                                </p>
+                            </li>
                         </ul>
                 </div>
             </div>
         </div>
         <div id="js">
-            <img src="https://p5js.org/assets/img/p5js.svg" id="js_icn_img" onclick="js()" />
-            <div id="j_contend" style="display:none;">
+            <img src="./index_files/p5js.svg" id="js_icn_img" onclick="js()">
+            <div id="j_contend" style="display: none;">
                 Warte auf die Zukunft
             </div>
         </div>
     </div>
 
-</body>
-</html>
+
+</body></html>
